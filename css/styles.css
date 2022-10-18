@@ -69,3 +69,46 @@ nav {
   border-radius: 500px;
   background-color: hsl(180, 66%, 49%);
 }
+
+.div-hero {
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+#img-hero {
+  display: block;
+  position: relative;
+  right: -2rem;
+  width: 130%;
+  height: auto;
+}
+
+.div-hero > div {
+  text-align: center;
+}
+
+.div-hero > div > h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin: 2rem 0rem 1rem 0rem;
+  color: hsl(257, 27%, 26%);
+}
+
+.div-hero > div > div {
+  color: hsl(257, 7%, 63%);
+  line-height: 1.75rem;
+  margin: 1rem auto;
+  font-size: 18px;
+  width: 90%;
+}
+
+.div-hero > div > button {
+  width: auto;
+  padding: .5rem 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.div-features {
+  background-color: hsl(225, 33%, 95%);
+}
