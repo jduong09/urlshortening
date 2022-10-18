@@ -1,0 +1,28 @@
+html, body, div, span, h1, h2, h3, h4, h5, p, a, img, header, footer, nav, section, ul, li, button, form, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  background: none;
+  text-transform: none;
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}

@@ -1,0 +1,71 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.hide {
+  display: none !important;
+}
+
+#icon-open-menu, #icon-close-menu, .btn-cta, .list-header-links > li > a, .list-header-cta > li > a {
+  cursor: pointer;
+}
+
+header {
+  padding: 2rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+#header-logo {
+  width: 121px;
+  height: 33px;
+}
+
+#icon-open-menu {
+  width: 24px;
+  height: 24px;
+}
+
+#icon-open-menu > path {
+  fill: hsl(257, 7%, 63%);
+}
+
+nav {
+  position: absolute;
+  left: 1rem;
+  top: 5rem;
+  z-index: 4;
+  width: calc(100% - 2rem);
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+
+}
+
+.list-header-links > li > a, .list-header-cta > li > a, .btn-cta {
+  font-weight: 700;
+}
+
+.list-header-links {
+  border-bottom: 1px solid hsl(257, 7%, 63%);
+}
+
+.list-header-links > li, .list-header-cta > li:first-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.list-header-cta {
+  padding-top: 1.5rem;
+}
+
+.btn-cta {
+  width: 100%;
+  padding: .5rem 0;
+  border-radius: 500px;
+  background-color: hsl(180, 66%, 49%);
+}
