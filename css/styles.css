@@ -71,7 +71,8 @@ nav {
 }
 
 .div-hero {
-  overflow: hidden;
+  position: relative;
+  overflow-x: clip;
   padding-bottom: 5rem;
 }
 
@@ -109,6 +110,169 @@ nav {
   color: hsl(0, 0%, 100%);
 }
 
+.div-url-form {
+  width: calc(100% - 2rem);
+  margin: 5rem auto -9rem auto;
+  padding: 1rem;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 8px;
+  background-image: url('../images/bg-shorten-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top -75px right -60px;
+}
+
+#input-url, #input-submit {
+  display: block;
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+}
+
+#input-url {
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+
+#input-submit {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(180, 66%, 49%);
+  font-weight: 700;
+}
+
 .div-features {
   background-color: hsl(225, 33%, 95%);
+  padding: 7rem 0 3.5rem 0;
+  text-align: center;
+}
+
+.div-statistics > h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 1.5rem 0;
+  color: hsl(257, 27%, 26%);
+}
+
+.div-statistics > div {
+  color: hsl(257, 7%, 63%);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.item-feature {
+  width: 90%;
+  margin: 5rem auto;
+  position: relative;
+  padding: 3.5rem 1.75rem 1.75rem 1.75rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+}
+
+.item-feature:last-of-type {
+  margin-bottom: 0;
+}
+
+.item-feature::after {
+  content: '';
+  width: 7.5px;
+  height: 5rem;
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(180, 66%, 49%);
+}
+
+.item-feature:last-of-type::after {
+  width: 0;
+  height: 0;
+}
+
+.item-feature > h4 {
+  font-size: 1.25rem;
+  color: hsl(257, 27%, 26%);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.div-icon {
+  display: inline-block;
+  width: auto;
+  padding: 1rem;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#icon-brand, #icon-detailed, #icon-customizable {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.item-feature > div {
+  color: hsl(257, 7%, 63%);
+}
+
+.div-cta {
+  padding: 6rem 0;
+  text-align: center;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url('../images/bg-boost-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.div-cta > h3 {
+  font-size: 1.75rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+
+.div-cta > .btn-cta {
+  width: auto;
+  padding: .5rem 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  padding: 3rem;
+  background-color: hsl(260, 8%, 14%);
+  text-align: center;
+}
+
+#footer-logo {
+  display: block;
+  width: 121px;
+  height: 33px;
+  margin: 0rem auto 3rem auto;
+}
+
+#footer-logo > path {
+  fill: hsl(0, 0%, 100%);
+}
+
+.list-footer-links > li > h5 {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin: 1.5rem 0;
+}
+
+.list-footer-links > li > ul > li {
+  color: hsl(257, 7%, 63%);
+  margin-bottom: .75rem;
+}
+
+.div-footer-social-media {
+  width: 60%;
+  margin: 3rem auto 0 auto;
+}
+
+.list-social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
