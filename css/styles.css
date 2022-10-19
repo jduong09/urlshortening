@@ -134,6 +134,23 @@ nav {
   margin-bottom: 1rem;
 }
 
+#input-url.nonfilled {
+  border: 3px solid hsl(0, 87%, 67%);
+  margin-bottom: 0;
+}
+
+#input-url.nonfilled::placeholder {
+  color: hsl(0, 87%, 67%);
+}
+
+#input-error-message {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: start;
+  font-size: 14px;
+  color: hsl(0, 87%, 67%);
+}
+
 #input-submit {
   color: hsl(0, 0%, 100%);
   background-color: hsl(180, 66%, 49%);
@@ -275,4 +292,22 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Active States */
+.list-header-links > li > a:hover, .list-header-cta > li > a:hover, .list-footer-links > li > ul > li > a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+.btn-cta:hover {
+  opacity: .5;
+}
+
+.list-header-cta > li > .btn-cta:hover, #input-submit:hover, .div-cta > .btn-cta:hover {
+  opacity: 1;
+  background-color: hsl(180deg 63% 74%);
+}
+
+.list-social-media > li > a > svg:hover > path {
+  fill: hsl(180, 66%, 49%);
 }
