@@ -7,7 +7,7 @@ body {
   display: none !important;
 }
 
-#icon-open-menu, #icon-close-menu, .btn-cta, .list-header-links > li > a, .list-header-cta > li > a {
+#icon-open-menu, #icon-close-menu, .btn-cta, .list-header-links > li > a, .list-header-cta > li > a, .btn-copy:hover {
   cursor: pointer;
 }
 
@@ -71,9 +71,8 @@ nav {
 }
 
 .div-hero {
-  position: relative;
-  overflow-x: clip;
-  padding-bottom: 5rem;
+  padding-bottom: 9rem;
+  overflow: hidden;
 }
 
 #img-hero {
@@ -110,16 +109,28 @@ nav {
   color: hsl(0, 0%, 100%);
 }
 
+.div-features {
+  position: relative;
+  overflow-x: clip;
+  background-color: hsl(225, 33%, 95%);
+  padding: 7rem 0 3.5rem 0;
+  text-align: center;
+}
+
 .div-url-form {
   width: calc(100% - 2rem);
-  margin: 5rem auto -9rem auto;
-  padding: 1rem;
+  margin: -11rem auto 4rem auto;
+}
+
+.div-url-form > form {
   background-color: hsl(257, 27%, 26%);
-  border-radius: 8px;
   background-image: url('../images/bg-shorten-mobile.svg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top -75px right -60px;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 #input-url, #input-submit {
@@ -157,10 +168,42 @@ nav {
   font-weight: 700;
 }
 
-.div-features {
-  background-color: hsl(225, 33%, 95%);
-  padding: 7rem 0 3.5rem 0;
-  text-align: center;
+.list-shortened-urls > li {
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 100%);
+  text-align: start;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.given-url {
+  padding: 1rem 1rem .5rem 1rem;
+  border-bottom: 1px solid hsl(225, 33%, 95%);
+  color: hsl(257, 27%, 26%);
+}
+
+.shortened-url {
+  padding: .5rem 1rem .5rem 1rem;
+  color: hsl(180, 66%, 49%);
+}
+
+.btn-copy {
+  display: block;
+  width: calc(100% - 2rem);
+  padding: .5rem;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: hsl(180, 66%, 49%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-copy.copied {
+  background-color: hsl(257, 27%, 26%);
+  cursor: inherit;
+}
+
+.btn-copy.copied:hover {
+  opacity: 1;
 }
 
 .div-statistics > h3 {
@@ -299,7 +342,7 @@ footer {
   color: hsl(180, 66%, 49%);
 }
 
-.btn-cta:hover {
+.btn-cta:hover, .btn-copy:hover {
   opacity: .5;
 }
 
