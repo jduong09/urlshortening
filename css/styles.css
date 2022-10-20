@@ -20,6 +20,7 @@ header {
 }
 
 #header-logo {
+  display: block;
   width: 121px;
   height: 33px;
 }
@@ -158,7 +159,11 @@ nav {
   display: block;
   margin-bottom: 1rem;
   text-align: start;
-  font-size: 14px;
+  font-size: 12px;
+  color: transparent;
+}
+
+#input-error-message.reveal {
   color: hsl(0, 87%, 67%);
 }
 
@@ -353,4 +358,204 @@ footer {
 
 .list-social-media > li > a > svg:hover > path {
   fill: hsl(180, 66%, 49%);
+}
+
+@media (min-width: 576px) {
+  #img-hero {
+    width: 115%;
+  }
+
+  .div-hero > div > h2 {
+    width: 80%;
+    margin: 2rem auto 1rem auto;
+  }
+
+  .div-hero > div > div {
+    width: 80%;
+  }
+}
+
+@media (min-width: 767px) {
+  /* Remove hidden menu from this pixel length and above */
+  h1 {
+    margin-right: 1rem;
+  }
+
+  .div-header-nav {
+    width: calc(100% - 121px);
+  }
+
+  nav {
+    position: initial;
+    left: initial;
+    top: initial;
+    z-index: initial;
+    width: auto;
+    text-align: start;
+    padding: 0;
+    background-color: transparent;
+    color: hsl(257, 7%, 63%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list-header-links > li > a, .list-header-cta > li > a, .btn-cta {
+    font-weight: 500;
+  }
+
+  .list-header-links, .list-header-cta {
+    display: flex;
+    align-items: center;
+  }
+
+  .list-header-links {
+    border-bottom: none;
+  }
+
+  .list-header-links > li, .list-header-cta > li:first-of-type {
+    margin-bottom: 0;
+  }
+
+  .list-header-links > li, .list-header-cta > li:last-of-type {
+    margin-left: 1rem;
+  }
+
+  .list-header-cta {
+    padding-top: 0;
+  }
+
+  header .btn-cta {
+    padding: .25rem 1rem;
+    color: hsl(0, 0%, 100%);
+  }
+
+
+  #img-hero {
+    width: 100%;
+    right: -8rem;
+  }
+
+  .div-hero > div > div {
+    width: 65%;
+  }
+
+  .div-url-form, .item-feature {
+    width: 75%;
+  }
+
+  .div-statistics > div {
+    width: 60%;
+  }
+
+  .div-footer-social-media {
+    width: 40%;
+  }
+}
+
+@media (min-width: 922px) {
+  /* Transition to desktop view */
+  header {
+    padding: 2rem 4rem;
+  }
+
+  .div-hero {
+    display: flex;
+    padding-left: 4rem;
+    padding-bottom: 8rem;
+    align-items: center;
+  }
+
+  #img-hero {
+    width: 55%;
+    order: 2;
+    right: -6rem;
+  }
+
+  .div-hero > div {
+    width: 45%;
+    text-align: start;
+  }
+
+  .div-hero > div > h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .div-hero > div > div {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .div-url-form > form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 2rem .65rem 2rem;
+    background-image: url('../images/bg-shorten-desktop.svg');
+    background-size: cover;
+    background-position: top right;
+  }
+
+  #input-url {
+    width: calc(80% - 1rem);
+    margin-bottom: 0;
+    margin-right: 1rem;
+    order: 1;
+  }
+
+  #input-error-message {
+    width: 100%;
+    flex: 1 100%;
+    order: 3;
+    margin-bottom: 0;
+    margin-top: 0.25rem;
+    font-size: 12px;
+  }
+
+  #input-submit {
+    width: 20%;
+    order: 2;
+  }
+
+  .list-shortened-urls > li {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem;
+  }
+
+  .given-url {
+    padding: 0;
+    margin-left: 0;
+    margin-right: auto;
+    border-bottom: none;
+  }
+
+  .shortened-url {
+    padding: 0;
+  }
+
+  .list-shortened-urls > li > .btn-copy {
+    width: 15%;
+    margin: 0 0 0 1rem;
+  }
+
+  .item-feature > div:last-of-type {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .div-footer-social-media {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
 }

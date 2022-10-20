@@ -9,4 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
       navMenu.classList.add('hide');
     }
   });
+
+  if (innerWidth >= 767) {
+    iconOpenMenu.classList.add('hide');
+    navMenu.classList.remove('hide');
+  } else {
+    iconOpenMenu.classList.remove('hide');
+    navMenu.classList.add('hide');
+  }
+
+  window.addEventListener('resize', () => {
+    if (innerWidth >= 767) {
+      iconOpenMenu.classList.add('hide');
+      navMenu.classList.remove('hide')
+    } else {
+      iconOpenMenu.classList.remove('hide');
+      navMenu.classList.add('hide');
+    }
+  })
 });

@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!inputUrl.value) {
       inputUrl.classList.add('nonfilled');
-      inputError.classList.remove('hide');
+      inputError.classList.add('reveal');
     } else {
       inputUrl.classList.remove('nonfilled');
-      inputError.classList.add('hide');
+      inputError.classList.remove('reveal');
       const http = new XMLHttpRequest();
       const method = 'GET';
       const url = `https://api.shrtco.de/v2/shorten?url=${inputUrl.value}`;
