@@ -547,15 +547,162 @@ footer {
     margin: 0 auto;
   }
 
+  .div-cta {
+    padding: 3.25rem 8rem;
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-position: bottom right;
+  }
+
+  .div-cta > h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
   .div-footer-social-media {
     width: 30%;
   }
 }
 
 @media (min-width: 1200px) {
+  header {
+    padding: 3rem 8rem;
+  }
 
+  .list-header-links > li, .list-header-cta > li:last-of-type {
+    margin-left: 1.5rem;
+  }
+
+  header .btn-cta {
+    padding: .25rem 1.25rem;
+  }
+
+  .div-hero {
+    padding-left: 8rem;
+  }
+
+  .div-url-form {
+    width: auto;
+  }
+
+  .div-url-form > form {
+    padding: 3rem 3rem 1.65rem 3rem;
+  }
+
+  #input-url {
+    padding: 1rem 1.5rem;
+  }
+
+  .list-shortened-urls > li {
+    padding: 1rem 1.5rem;
+  }
+
+  .list-shortened-urls > li > .btn-copy {
+    width: 10%;
+  }
+
+  .div-features {
+    padding: 8rem;
+  }
+
+  .div-statistics {
+    margin-bottom: 2rem;
+  }
+
+  .div-statistics > h3 {
+    font-size: 2rem;
+  }
+
+  .list-features {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .item-feature {
+    width: 31.5%;
+    margin: 2rem 0;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .item-feature:nth-of-type(2) {
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+
+  .item-feature:last-of-type {
+    margin-top: 6rem;
+    margin-bottom: -2rem;
+  }
+
+  .item-feature::after {
+    width: 5rem;
+    height: 7.5px;
+    top: 50%;
+    left: initial;
+    right: -5rem;
+    transform: none;
+  }
+
+  .item-feature > h4 {
+    text-align: start;
+  }
+
+  .div-icon {
+    left: 1.5rem;
+    transform: none;
+  }
+
+  .item-feature > div:last-of-type {
+    width: auto;
+    margin: 0;
+    text-align: start;
+  }
+
+  footer {
+    display: flex;
+    padding: 3rem 8rem;
+    text-align: start;
+  }
+
+  .div-footer-links {
+    width: 60%;
+    margin: 0 0 0 auto;
+  }
+
+  .list-footer-links {
+    display: flex;
+    justify-content: end;
+  }
+
+  .list-footer-links > li {
+    margin-right: 3rem;
+  }
+
+  .list-footer-links > li > h5 {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .div-footer-social-media {
+    width: 15%;
+    margin: 0 0 0 auto;
+  }
 }
 
 @media (min-width: 1400px) {
+  .div-hero > div > h2 {
+    font-size: 4rem;
+    line-height: 4.25rem;
+  }
 
+  #input-url {
+    width: calc(85% - 1rem);
+  }
+
+  #input-submit {
+    width: 15%;
+  }
+
+  .div-statistics > div {
+    width: 40%;
+  }
 }
